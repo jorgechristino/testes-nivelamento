@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "32a4d393-2403-4474-bf84-d29c623365ad",
+		"name": "Teste API",
+		"description": "Testes das rotas realizadas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25643775"
+	},
+	"item": [
+		{
+			"name": "POST Operadora",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNzQyOTM5NDUxLCJpYXQiOjE3NDIzMzQ2NTEsInN1YiI6IjEifQ.fN0v7SYVrcsGn7ayBXkafckJU4bJ4jkj1o7c_HdyxMg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registro_ans\": \"123456\",\r\n  \"cnpj\": \"12345678000199\",\r\n  \"razao_social\": \"SAÚDE VIVA LTDA\",\r\n  \"nome_fantasia\": \"VIVA SAÚDE\",\r\n  \"modalidade\": \"Medicina de Grupo\",\r\n  \"logradouro\": \"Rua das Flores\",\r\n  \"numero\": \"100\",\r\n  \"complemento\": \"Sala 202\",\r\n  \"bairro\": \"Centro\",\r\n  \"cidade\": \"São Paulo\",\r\n  \"uf\": \"SP\",\r\n  \"cep\": \"01000000\",\r\n  \"ddd\": \"11\",\r\n  \"telefone\": \"12345678\",\r\n  \"fax\": \"87654321\",\r\n  \"endereco_eletronico\": \"contato@vivasaude.com.br\",\r\n  \"representante\": \"Jorge Christino\",\r\n  \"cargo_representante\": \"Diretor\",\r\n  \"regiao_de_comercializacao\": 1,\r\n  \"data_registro_ans\": \"2025-03-27\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Operadoras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Operadora",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"registro_ans\": \"123456\",\r\n  \"cnpj\": \"12345678000199\",\r\n  \"razao_social\": \"SAÚDE VIVA LTDA\",\r\n  \"nome_fantasia\": \"VIVA SAÚDE\",\r\n  \"modalidade\": \"Medicina de Grupo\",\r\n  \"logradouro\": \"Rua das Amélias\",\r\n  \"numero\": \"80\",\r\n  \"complemento\": \"Sala 300\",\r\n  \"bairro\": \"Centro\",\r\n  \"cidade\": \"São Paulo\",\r\n  \"uf\": \"SP\",\r\n  \"cep\": \"01000001\",\r\n  \"ddd\": \"11\",\r\n  \"telefone\": \"87654321\",\r\n  \"fax\": \"87654321\",\r\n  \"endereco_eletronico\": \"contato@vivasaude.com.br\",\r\n  \"representante\": \"Jorge Christino\",\r\n  \"cargo_representante\": \"Diretor\",\r\n  \"regiao_de_comercializacao\": 1,\r\n  \"data_registro_ans\": \"2025-03-27\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/1109",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						"1109"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Operadora",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/1109",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						"1109"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR Operadoras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/operadoras/search?termo=unimed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"operadoras",
+						"search"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "unimed"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
