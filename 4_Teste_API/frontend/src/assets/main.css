@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Opificio";
+  src: url("./fonts/Opificio_regular.ttf") format("truetype"),
+    url("./fonts/Opificio_Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Opificio", sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+label,
+h1,
+h2 {
+  color: #333;
+}
+
+input {
+  font-family: "Opificio", sans-serif;
+}
