@@ -50,6 +50,5 @@ if __name__ == "__main__":
   zip_csv(zip_name)
   df = transform_data(df)
   save_data_to_csv(df, "Dados_Transformados.csv")
-  print(df)
   
 
