@@ -143,7 +143,7 @@ python tratamento_de_dados.py
 FROM '...\3_Teste_Banco_De_Dados\downloads\Relatorio_cadop.csv'
 ```
 
-4. Para fazer as consultas, execute as queries do arquivo [consultas_analiticas.sql](3_Teste_Banco_De_Dados/consultas_analiticas.sql.sql)
+4. Para fazer as consultas, execute as queries do arquivo [consultas_analiticas.sql](3_Teste_Banco_De_Dados/consultas_analiticas.sql)
 
 ## 4. Teste de API
 
